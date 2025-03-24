@@ -1,0 +1,41 @@
+AWS Lightsail
+Přihlášení přes PUTTY
+----------------------------
+- AWS ve výchozím stavu podporuje přihlášení přes klíč (ne přes uživ. jméno a heslo)
+- Přípra přihlášení přes klíč není složitá.
+
+1. Pro vytvořenou instanci stáhnu klíč. Ten je ve formátu .pem
+2. Přes puttygen převedu na formát .ppk
+Spustit ve win cmd: puttygen
+Load (načíst soubor .ppk)
+Save private key
+  Are you sure you want to save this key without a passphrase ot protect it?
+  Dal jsem: Ano
+  A uložil jsem klíč ve formátu: .ppk
+Puttygen zavřít
+Tento soubor umístit někam, kde zůstane. Na něj se bude vždy putty dívat - pokud bych ho přesunul/přejmenoval, putty by pak nešlo přihlašovat.
+3. Nastavení putty
+Session zadat: IP adresu + port 22
+Connection - SSh - AUTH - Credentials: Private key - Browse, vyvrat ppk soubor
+Connection - Data: Auto-login username: ubuntu (Závisí, jaké je uživ jméno při zřizování Lightsail)
+Session: Saved session: Např. zadat: Lightsail, dát Save (ať nemusím pokaždé znovu vše zadávat)
+Session: open
+
+Přihlášení přes WinSCP
+------------------------------
+Spojení: SFTP
+Hostitel: IP_adresa
+Port: 22
+uživ. jméno: ubuntu (viz. zadání v Lightsail)
+Pokročilé: 
+  SSH - Authentizace - Soubor se soukromým klíčem: vybrat soubor
+
+Kontrola dostupnosti z CMD windows
+-----------------------------------
+ping IP_adress		Zřejmě nefunguje, ICMP není povoleno
+web: Lightsail - Networking - IPv4Firewall
+  Přidat pravidlo: ALL ICMP
+ping IP_adress		Nyní OK
+
+POZN: ping přes IPv6 není v JULI povoleno.
+

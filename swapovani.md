@@ -11,13 +11,15 @@ df -h    # Kolik je volného místa na disku
 - Formátuj jako swap
 - Aktivuj swap
 - Ověř, že swap funguje.
+- Ověření, že swap file byl vytvořen se správnou velikostí a se správným oprávněním. (Vhodné (ale ne nutné) po vytvoření souboru a dále po nastavení oprávnění pro kontrolu.)
 
 ```
 sudo fallocate -l 1G /swapfile	
 sudo chmod 600 /swapfile		
 sudo mkswap /swapfile			
 sudo swapon /swapfile			
-free -m							
+free -m
+ls -lh /swapfile					
 ```
 
 ## Zvětšení existujícího swap. souboru:

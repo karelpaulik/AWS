@@ -19,8 +19,13 @@ amplify --version
 ### Konfigurace
 Pokud je správně nakonfigurováno AWS CLI, není třeba nic dalšího konfigurovat.
 
-### Použití
+### Příklady Použití
 - amplify init
 - npm install aws-amplify    (The aws-amplify package is the main library for working with Amplify Libraries in your projects)
 - amplify add api
 - amplify push
+
+### Obvyklý postup v praxi
+- amplify init → Vytvoří projekt a připraví AWS prostředí (jen metadata).
+- amplify add <kategorie> (např. api, function) → Definuje zdroje lokálně.
+- amplify push → Poprvé přesune část projektu (backend) na AWS.

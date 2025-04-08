@@ -49,3 +49,18 @@ Pozn: Tyto dva soubory můžu použít, kdybych se chtěl připojovat na AWS CLI
 - aws s3 ls
 - aws lightsail get-instances
 - aws ec2 describe-instances
+- aws iam list-users
+- aws amplify list-apps
+
+### AWS Help
+```
+Formát:
+aws help
+aws <command> help
+aws <command> <subcommand> help
+
+aws help
+aws apmlify help
+aws s3 help
+aws lightsail help
+```

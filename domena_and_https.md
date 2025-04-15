@@ -63,14 +63,14 @@ Vlastník domény **bedobe.eu** není veřejně uveden kvůli ochraně soukromí
 # Certifikáty ke statickým web. stránkám
 Stat. html se dají na AWS hostovat několika způsoby. Ohledně SSL certifikátu se každý chová jinak.
 
-## S3 stat. html
+## S3 stat. html - pro https je nutný předempřipravený SSL certifikát
 - Zde se jednoduše vytvoří stat. html
-- S3 umí pouze **http**, neumí **https**
+- !!! S3 umí pouze **http**, neumí **https**
 - Pro **https** je nutné hostování přes **CloudFront**
 - **CloudFront** je možný pouze jako **https**
 - **CloudFront** potřebuje vygenerovaný certifikát
 
-## Stat. html přes amplify
+## Stat. html přes amplify - pro https není nutný žádný SSL certifikát
 - Jednoduché nahrání stránek přes zip (kde je v index.html v hl. úrovni), nebo přes *amplify cli*
 - Amplify umí pouze **https**
 - Při vytvoření stat. hostingu se vždy vygeneruje nějaký **https://xxx** endpoint, **bez toho, aby uživatel vkládal certifikát**

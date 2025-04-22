@@ -36,6 +36,6 @@ Pozn: Existuje defaultní politika "FullAWSAccess", která povoluje přístup do
 
 ## Co dál
 Dá se vytvořit consolidated billing
-   - Musí být více uživatelů
-   - Znamená to, že účtování bude souhrnné pro všechny účty, ne pro každý účet separé.
-   - Mě se to nastavit nepodařilo, protože jsem consolidated billling nenašel
+   - Musí být více uživatelů (Pozor, rozdíl: účet vs uživatel, tzn. např účet jmeno.prijmeni, uživatel IAM: admin).
+   - Znamená to, že účtování bude souhrnné pro všechny účty, ne pro každý účet separé. (opět rozlišovat slovo: účet vs uživatel)
+   - Mě se to nastavit nepodařilo, protože jsem consolidated billling nenašel (důvod byl, že byl jen jeden účet, i když bylo více uživatelů)

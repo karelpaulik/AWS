@@ -1,6 +1,8 @@
-## Jak nastavit omezení uživatele, aby mohl pracovat pouze s jedním regionem.
+# Policy na uživateli
+- **Tyto níže popsané policy je lepší na uživatele nezadávat, ale zadávat pro Organization.**
+- **Tyto policy se ale nevztahují na "root" uživatele**.
 
----
+## Jak nastavit omezení uživatele, aby mohl pracovat pouze s jedním regionem.
 
 ### 🔧 Postup: Omezení přístupu uživatele pouze na 1 region (např. `eu-central-1`)
 
@@ -49,6 +51,5 @@ Můžeš přihlásit uživatele a zkusit:
 - Spustit EC2 instanci v jiném regionu → mělo by to selhat (`AccessDenied`).
 - Spustit EC2 v `eu-central-1` → mělo by to projít, pokud má jiná politika povolující tuto akci.
 
----
-
-Chceš k tomu ještě CLI variantu nebo rozšíření např. o whitelist jen několika služeb?
+# Tag policy
+Tag policy je možné definovat pouze na organizaci.

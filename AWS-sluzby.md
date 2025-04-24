@@ -16,11 +16,10 @@
 
 ## Zabazpečení, logy, 
 - CloudTrail (event history)
-- CloudWatch ()
+- CloudWatch (různé alarmy)
+- Trusted Advisor: Nenastavuje se, funguje automaticky od začátku existence AWS účtu. Když je něco podezřelého/špatně nastaveného, tak na to upozorňuje.
 
 - Billing and CostManagement 
   - Budgets
     - Cost budget
     - Usage budget
-   
-- Trusted Advisor: Nenastavuje se, funguje automaticky od začátku existence AWS účtu. Když je něco podezřelého/špatně nastaveného, tak na to upozorňuje.

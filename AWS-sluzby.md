@@ -23,3 +23,4 @@
   - Budgets
     - Cost budget
     - Usage budget
+  - Anomaly cost detection

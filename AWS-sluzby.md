@@ -1,8 +1,16 @@
 ## AWS služby
 - EC2
-- S3
-- Amplify
 - Lightsail
+- S3
+- CloudFront
+- Amplify
+- AppSync
+- CloudFormation
+
+- DynamoDB
+
+- AWS Lambda
+- Api Gateway
 
 - AWS account
 - AWS Organizations
@@ -13,6 +21,7 @@
   - Users
   - Roles
   - Policies
+- IAM identity center
 
 ## Zabazpečení, logy, 
 - CloudTrail (event history)
@@ -21,6 +30,4 @@
 
 - Billing and CostManagement 
   - Budgets
-    - Cost budget
-    - Usage budget
   - Anomaly cost detection

@@ -1,7 +1,13 @@
 ## AWS služby
 - EC2
 - Lightsail
-- S3
+- S3  (zde se dá nastavit: S3 Storage Lens - aby sledoval velikosti existujicích bucketů)
+  - Pro přísup do StorageLens je potřeba nový uživatel s právy:
+  - **Permissions required:**
+  - s3:ListStorageLensConfigurations
+  - s3:GetStorageLensConfiguration
+  - s3:GetStorageLensDashboard
+  - Pozn. Tyto práva nejsou v seznamu policy, ale je nutné vytvořit JSON s těmito právy.
 - CloudFront
 - Amplify
 - AppSync
@@ -25,9 +31,9 @@
 
 ## Zabazpečení, logy, 
 - CloudTrail (event history)
-- CloudWatch (různé alarmy)
+- CloudWatch (různé alarmy) - Billing alarm se vytváří v: Northern Virginia Region
 - Trusted Advisor: Nenastavuje se, funguje automaticky od začátku existence AWS účtu. Když je něco podezřelého/špatně nastaveného, tak na to upozorňuje.
 
 - Billing and CostManagement 
-  - Budgets
+  - **Budgets**
   - Anomaly cost detection

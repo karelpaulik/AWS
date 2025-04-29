@@ -10,13 +10,13 @@
   - Pozn. Tyto práva nejsou v seznamu policy, ale je nutné vytvořit JSON s těmito právy.
 - CloudFront
 - Amplify
-- AppSync
+- AppSync  (GREAPHQL API)
 - CloudFormation
 
 - DynamoDB
 
 - AWS Lambda
-- Api Gateway
+- Api Gateway  (REST api)
 
 - AWS account
 - AWS Organizations
@@ -37,3 +37,6 @@
 - Billing and CostManagement 
   - **Budgets**
   - Anomaly cost detection
+ 
+## Monitoring zdrojů
+- AWS resource explorer

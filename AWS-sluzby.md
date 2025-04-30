@@ -52,3 +52,4 @@
  
 ## Monitoring zdrojů
 - AWS resource explorer
+  - Pro vyhledávání je vhodné pro jednotlivé instance používat tagy.

@@ -1,5 +1,6 @@
 ## AWS služby
 - EC2
+  - Load balancer
 - Lightsail
 - S3  (zde se dá nastavit: S3 Storage Lens - aby sledoval velikosti existujicích bucketů)
   - Pro přísup do StorageLens je potřeba nový uživatel s právy:
@@ -20,6 +21,17 @@
 
 - AWS account
 - AWS Organizations
+
+- VPC
+  - VPC
+  - Subnets
+  - Route tables
+  - Internet gateway
+  - NAT gateway
+  - Elastic IP
+  - Network ACL
+  - Security groups
+  
 
 ## Uživatelé
 - IAM

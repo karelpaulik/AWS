@@ -3,6 +3,7 @@
   - Load balancer
 - Lightsail
 - S3  (zde se dá nastavit: S3 Storage Lens - aby sledoval velikosti existujicích bucketů)
+  - **StorageLens**
   - Pro přísup do StorageLens je potřeba nový uživatel s právy:
   - **Permissions required:**
   - s3:ListStorageLensConfigurations
